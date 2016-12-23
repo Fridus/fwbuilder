@@ -27,7 +27,7 @@ matrix:
     compiler: gcc
 
 install:
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install qt5 && brew link --force qt5 ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install qt@5.5 && brew link --force qt@5.5 ; fi
 
 before_script:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then ./autogen.sh ; fi
